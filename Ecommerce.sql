@@ -59,3 +59,39 @@ CREATE TABLE IF NOT EXISTS order_items (
     FOREIGN KEY (order_id) REFERENCES orders(order_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
+
+-- Insertar usuarios
+INSERT INTO users (username, email, password_hash) VALUES
+('johndoe', 'john@example.com', 'hashpassword1'),
+('janedoe', 'jane@example.com', 'hashpassword2'),
+('mike123', 'mike@example.com', 'hashpassword3');
+
+-- Insertar productos
+INSERT INTO products (name, description, price, stock, image_url) VALUES
+('Laptop Gamer', 'Laptop de alto rendimiento para videojuegos.', 1500.00, 10, 'https://example.com/laptop.jpg'),
+('Smartphone Pro', 'Teléfono inteligente de última generación.', 999.99, 25, 'https://example.com/smartphone.jpg'),
+('Audífonos Inalámbricos', 'Audífonos con cancelación de ruido.', 199.99, 50, 'https://example.com/audifonos.jpg');
+
+-- Insertar carritos de compras
+INSERT INTO carts (user_id) VALUES
+(1),
+(2),
+(3);
+
+-- Insertar ítems en carritos
+INSERT INTO cart_items (cart_id, product_id, quantity) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 1);
+
+-- Insertar órdenes
+INSERT INTO orders (user_id, total_amount, payment_status) VALUES
+(1, 1500.00, 'paid'),
+(2, 1999.98, 'pending'),
+(3, 199.99, 'failed');
+
+-- Insertar ítems en órdenes
+INSERT INTO order_items (order_id, product_id, quantity, price) VALUES
+(1, 1, 1, 1500.00),
+(2, 2, 2, 999.99),
+(3, 3, 1, 199.99);
