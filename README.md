@@ -159,7 +159,8 @@ INSERT INTO order_items (order_id, product_id, quantity, price) VALUES
 
 ---
 
-Puedes pegar este archivo tal cual en Visual Studio Code como `README.md`.  
-¿Quieres que te prepare también el `ecommerce_dump.sql` combinando todo?
+Juherles Jesus Bravo Renia
+Proyecto de Base de Datos – E-commerce
+Año: 2025
 
 ---
