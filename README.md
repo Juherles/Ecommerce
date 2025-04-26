@@ -148,9 +148,9 @@ INSERT INTO order_items (order_id, product_id, quantity, price) VALUES
 
 ## Estado
 
-✔️ Base de datos funcional
-✔️ Datos de prueba insertados
-✔️ Listo para conexión con backend en PHP
+- ✔️ Base de datos funcional
+- ✔️ Datos de prueba insertados
+- ✔️ Listo para conexión con backend en PHP
 
 ---
 
@@ -159,8 +159,8 @@ INSERT INTO order_items (order_id, product_id, quantity, price) VALUES
 
 ---
 
-Juherles Jesus Bravo Renia
-Proyecto de Base de Datos – E-commerce
-Año: 2025
+- Juherles Jesus Bravo Renia
+- Proyecto de Base de Datos – E-commerce
+- Año: 2025
 
 ---
